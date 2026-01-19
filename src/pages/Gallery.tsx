@@ -3,19 +3,100 @@ import { Layout } from "@/components/layout/Layout";
 import { X } from "lucide-react";
 import { cn } from "@/lib/utils";
 
+// Nature
+import sunset from "@/assets/sunset.jpeg";
+import caption from "@/assets/caption.jpg";
+import fallTrail from "@/assets/falltrial.jpeg";
+
+// Heritage
+import templeJpg from "@/assets/temple.jpg";
+import templePng from "@/assets/temple.png";
+import gandikota from "@/assets/gandikota.webp";
+import overall from "@/assets/overall.jpg";
+
+// Beach
+import beach from "@/assets/beach.jpg";
+import destinationValley from "@/assets/destination-valley.jpg";
+
+// Culture
+import festival from "@/assets/festival.jpg";
+import cousin from "@/assets/cousin.jpg";
+import village from "@/assets/village.png";
+
+
 const galleryImages = [
-  { id: 1, src: "/src/assets/sunset.jpeg", alt: "Mountain landscape at sunrise", category: "Nature" },
-  { id: 2, src: "/src/assets/temple.jpg", alt: "Ancient temple architecture", category: "Heritage" },
-  { id: 3, src: "/src/assets/temple.png", alt: "Traditional festival celebration", category: "Culture" },
-  { id: 4, src: "/src/assets/beach.jpg", alt: "Pristine beach coastline", category: "Beach" },
-  { id: 5, src: "/src/assets/festival.jpg", alt: "Local artisan at work", category: "Culture" },
-  { id: 6, src: "/src/assets/gandikota.webp", alt: "Wildlife in natural habitat", category: "Wildlife" },
-  { id: 7, src: "src/assets/caption.jpg", alt: "Valley at golden hour", category: "Nature" },
-  { id: 8, src: "src/assets/overall.jpg", alt: "Historic monument", category: "Heritage" },
-  { id: 9, src: "src/assets/cousin.jpg", alt: "Traditional cuisine", category: "Culture" },
-  { id: 10, src: "src/assets/falltrial.jpeg", alt: "Forest trail", category: "Nature" },
-  { id: 11, src: "src/assets/destination-valley.jpg", alt: "Fishing boats at harbor", category: "Beach" },
-  { id: 12, src: "src/assets/village.png", alt: "Rura l village scene", category: "Culture" },
+  {
+    id: 1,
+    src: sunset,
+    alt: "Mountain landscape at sunrise",
+    category: "Nature",
+  },
+  {
+    id: 2,
+    src: templeJpg,
+    alt: "Ancient temple architecture",
+    category: "Heritage",
+  },
+  {
+    id: 3,
+    src: templePng,
+    alt: "Traditional festival celebration",
+    category: "Culture",
+  },
+  {
+    id: 4,
+    src: beach,
+    alt: "Pristine beach coastline",
+    category: "Beach",
+  },
+  {
+    id: 5,
+    src: festival,
+    alt: "Local artisan at work",
+    category: "Culture",
+  },
+  {
+    id: 6,
+    src: gandikota,
+    alt: "Wildlife in natural habitat",
+    category: "Wildlife",
+  },
+  {
+    id: 7,
+    src: caption,
+    alt: "Valley at golden hour",
+    category: "Nature",
+  },
+  {
+    id: 8,
+    src: overall,
+    alt: "Historic monument",
+    category: "Heritage",
+  },
+  {
+    id: 9,
+    src: cousin,
+    alt: "Traditional cuisine",
+    category: "Culture",
+  },
+  {
+    id: 10,
+    src: fallTrail,
+    alt: "Forest trail",
+    category: "Nature",
+  },
+  {
+    id: 11,
+    src: destinationValley,
+    alt: "Fishing boats at harbor",
+    category: "Beach",
+  },
+  {
+    id: 12,
+    src: village,
+    alt: "Rural village scene",
+    category: "Culture",
+  },
 ];
 
 const categories = ["All", "Nature", "Heritage", "Culture", "Beach", "Wildlife"];

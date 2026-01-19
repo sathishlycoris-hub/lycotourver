@@ -70,7 +70,7 @@ const Explore = () => {
                     : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
                 )}
               >
-                {category.icon} {category.name}
+                {category.name}
               </button>
             ))}
           </div>
