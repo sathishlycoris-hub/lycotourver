@@ -23,7 +23,7 @@ export function Footer() {
           <div className="lg:col-span-1">
             <Link to="/" className="inline-block">
               <span className="font-serif text-2xl font-semibold">
-                Lyco<span className="text-accent">Tourism</span>
+                Lyco<span className="text-accent"> Tourism</span>
               </span>
             </Link>
             <p className="mt-4 text-primary-foreground/80 text-sm leading-relaxed">
@@ -72,15 +72,18 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-3 text-sm text-primary-foreground/80">
                 <MapPin className="h-4 w-4 mt-0.5 shrink-0" />
-                <span>123 Tourism Avenue, Heritage District</span>
+                <span>Flat No. G1 & G3, RS No. 378/1A, 1B, 1C, Aikya-2 Apartments, Korukonda Road,
+Konthamuru, Rajahmundry,
+East Godavari,
+Andhra Pradesh – 533102</span>
               </li>
               <li className="flex items-center gap-3 text-sm text-primary-foreground/80">
                 <Mail className="h-4 w-4 shrink-0" />
-                <span>hello@lycotourism.com</span>
+                <span>contact@lycoris.in</span>
               </li>
               <li className="flex items-center gap-3 text-sm text-primary-foreground/80">
                 <Phone className="h-4 w-4 shrink-0" />
-                <span>+1 234 567 8900</span>
+                <span>+91-7673946789</span>
               </li>
             </ul>
           </div>
