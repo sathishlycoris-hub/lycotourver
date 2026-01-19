@@ -2,6 +2,12 @@ import { Layout } from "@/components/layout/Layout";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Heart, Compass, Users, Leaf } from "lucide-react";
+import adventureImg from "@/assets/adven.jpg";
+import beachRiseImg from "@/assets/rise.webp";
+import hillStationImg from "@/assets/hotel.jpg";
+import heritageImg from "@/assets/dream.webp";
+import foodCultureImg from "@/assets/food.webp";
+import wildlifeGroupImg from "@/assets/traveller.webp";
 
 // ── ADD THIS ARRAY HERE ──
 const values = [
@@ -133,106 +139,110 @@ const About = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Adventure */}
-            <div className="group relative rounded-xl overflow-hidden shadow-lg">
-              <img
-                src="src/assets/adven.jpg"
-                alt="Thrilling paragliding adventure"
-                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
-                <div>
-                  <h3 className="text-xl font-bold text-white">Adventure Tours</h3>
-                  <p className="text-white/80 text-sm mt-1">
-                    Trekking, camping, safaris & adrenaline activities
-                  </p>
-                </div>
-              </div>
-            </div>
+{/* Adventure */}
+<div className="group relative rounded-xl overflow-hidden shadow-lg">
+  <img
+    src={adventureImg}
+    alt="Thrilling paragliding adventure"
+    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+  />
+  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+    <div>
+      <h3 className="text-xl font-bold text-white">Adventure Tours</h3>
+      <p className="text-white/80 text-sm mt-1">
+        Trekking, camping, safaris & adrenaline activities
+      </p>
+    </div>
+  </div>
+</div>
 
-            {/* Beach */}
-            <div className="group relative rounded-xl overflow-hidden shadow-lg">
-              <img
-                src="src/assets/rise.webp"
-                alt="Pristine beach getaway at sunrise"
-                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
-                <div>
-                  <h3 className="text-xl font-bold text-white">Beach Getaways</h3>
-                  <p className="text-white/80 text-sm mt-1">
-                    Relaxing shores, pristine waters & luxury stays
-                  </p>
-                </div>
-              </div>
-            </div>
+{/* Beach */}
+<div className="group relative rounded-xl overflow-hidden shadow-lg">
+  <img
+    src={beachRiseImg}
+    alt="Pristine beach getaway at sunrise"
+    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+  />
+  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+    <div>
+      <h3 className="text-xl font-bold text-white">Beach Getaways</h3>
+      <p className="text-white/80 text-sm mt-1">
+        Relaxing shores, pristine waters & luxury stays
+      </p>
+    </div>
+  </div>
+</div>
 
-            {/* Hill Stations */}
-            <div className="group relative rounded-xl overflow-hidden shadow-lg">
-              <img
-                src="src/assets/hotel.jpg"
-                alt="Scenic misty hill station retreat"
-                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
-                <div>
-                  <h3 className="text-xl font-bold text-white">Hill Stations</h3>
-                  <p className="text-white/80 text-sm mt-1">
-                    Cool climate, stunning views & peaceful nature
-                  </p>
-                </div>
-              </div>
-            </div>
+{/* Hill Stations */}
+<div className="group relative rounded-xl overflow-hidden shadow-lg">
+  <img
+    src={hillStationImg}
+    alt="Scenic misty hill station retreat"
+    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+  />
+  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+    <div>
+      <h3 className="text-xl font-bold text-white">Hill Stations</h3>
+      <p className="text-white/80 text-sm mt-1">
+        Cool climate, stunning views & peaceful nature
+      </p>
+    </div>
+  </div>
+</div>
 
-            {/* Heritage */}
-            <div className="group relative rounded-xl overflow-hidden shadow-lg">
-              <img
-                src="src/assets/dream.webp"
-                alt="Ancient Indian heritage temple at sunrise"
-                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
-                <div>
-                  <h3 className="text-xl font-bold text-white">Heritage Tours</h3>
-                  <p className="text-white/80 text-sm mt-1">
-                    Temples, monuments & rich cultural legacy
-                  </p>
-                </div>
-              </div>
-            </div>
+{/* Heritage */}
+<div className="group relative rounded-xl overflow-hidden shadow-lg">
+  <img
+    src={heritageImg}
+    alt="Ancient Indian heritage temple at sunrise"
+    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+  />
+  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+    <div>
+      <h3 className="text-xl font-bold text-white">Heritage Tours</h3>
+      <p className="text-white/80 text-sm mt-1">
+        Temples, monuments & rich cultural legacy
+      </p>
+    </div>
+  </div>
+</div>
 
-            {/* Food & Culture */}
-            <div className="group relative rounded-xl overflow-hidden shadow-lg">
-              <img
-                src="src/assets/food.webp"
-                alt="Authentic Indian thali cultural dining"
-                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
-                <div>
-                  <h3 className="text-xl font-bold text-white">Food & Culture</h3>
-                  <p className="text-white/80 text-sm mt-1">
-                    Local cuisine & immersive traditions
-                  </p>
-                </div>
-              </div>
-            </div>
+{/* Food & Culture */}
+<div className="group relative rounded-xl overflow-hidden shadow-lg">
+  <img
+    src={foodCultureImg}
+    alt="Authentic Indian thali cultural dining"
+    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+  />
+  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+    <div>
+      <h3 className="text-xl font-bold text-white">Food & Culture</h3>
+      <p className="text-white/80 text-sm mt-1">
+        Local cuisine & immersive traditions
+      </p>
+    </div>
+  </div>
+</div>
 
-            {/* Wildlife / Group */}
-            <div className="group relative rounded-xl overflow-hidden shadow-lg">
-              <img
-                src="src/assets/traveller.webp"
-                alt="Exciting wildlife safari experience"
-                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
-                <div>
-                  <h3 className="text-xl font-bold text-white">Wildlife & Group Tours</h3>
-                  <p className="text-white/80 text-sm mt-1">
-                    Safaris, group adventures & expert guidance
-                  </p>
-                </div>
-              </div>
-            </div>
+{/* Wildlife */}
+<div className="group relative rounded-xl overflow-hidden shadow-lg">
+  <img
+    src={wildlifeGroupImg}
+    alt="Exciting wildlife safari experience"
+    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+  />
+  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+    <div>
+      <h3 className="text-xl font-bold text-white">
+        Wildlife & Group Tours
+      </h3>
+      <p className="text-white/80 text-sm mt-1">
+        Safaris, group adventures & expert guidance
+      </p>
+    </div>
+  </div>
+</div>
+
           </div>
         </div>
       </section>
